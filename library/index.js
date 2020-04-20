@@ -3,7 +3,7 @@ import { NativeModules } from 'react-native';
 
 const { RNFloatingBubble } = NativeModules;
 
-export const showFloatingBubble = (x = 50, y = 100) => RNFloatingBubble.showFloatingBubble(x, y);
+export const showFloatingBubble = (x = 50, y = 100, data) => RNFloatingBubble.showFloatingBubble(x, y, data);
 export const hideFloatingBubble = () => RNFloatingBubble.hideFloatingBubble();
 export const checkPermission = () => RNFloatingBubble.checkPermission();
 export const requestPermission = () => RNFloatingBubble.requestPermission();
